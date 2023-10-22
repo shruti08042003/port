@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="all.css">
+    <!-- <script src="script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class = "left">My Portfolio</div>
+        <div class = "right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- first home section -->
+    <main> 
+        <table id="home"></table>
+        <section class = "firstSection">
+            <div class="leftSection">
+                <table id="home"></table>
+                Hello, I am <span class ="purple">Shruti</span>
+                <div>and I am a student</div>
+                <!-- <div>Freelancer</div> -->
+                  <span id="element"></span>  
+                    <button class="btn">Download Resume</button>
+                    <script src="script.js"></script>
+            
+                    <button class="btn" >
+                        <a href="https://github.com/shruti08042003/Landing_Page" >
+                            <span class="github-link">GitHub</span>
+                        </a>
+                    </button>
+                 </div>
+            </div>
+            <div class="rightSection">
+                <img src="pr1.jpg" alt="developer pic">
+            </div>
+
+        </section> 
+        </main> 
+         <!--end of home section  -->
+         <!-- styling of home page -->
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>   
+    <script>
+        var typed = new Typed('#element',{
+            strings: ['Web Developer', 'Freelancer and', 'an Intern' ],
+            typeSpeed: 50,
+        });
+    </script>
+     <!-- about section start -->
+     <table id="about"></table>
+   <main>
+    <section class = "firstSection1">
+        <div class="leftSection1">
+           <table id="About"></table>
+            <h1 class="project-heading1">About</h1> 
+
+           
+             <div>
+                Introduction:<br>
+                             <br>
+                Name : Shruti kumari<br>
+                Current Course : BCA<br>
+                Session : 2021 - 2024<br>
+                Current Year : 3rd<br>
+                <br>
+                Work experience : 0 - 1 Year<br>
+                Specialisation : HTML,CSS,C,C++,Java<br>
+                <br>
+                Educational Qualification <br>
+                <br>
+                Board : CBSE<br>
+                Matriculation percentage : 84%<br>
+                Intermediate percentage : 80%<br>
+             </div>  
+             
+        </div>
+         <div class="rightSection1">
+            <img src="pr1.jpg" alt="developer pic"> 
+        </div>
+   </section> 
+</main>  
+<!-- end of about section --> 
+    <!-- project section start-->
+    <main>
+        <table id="project"></table>
+        <section class = "firstSection2">
+            
+            <div class="leftSection2">
+                <table id="Project"></table>
+                <h1 class="project-heading2">Project</h1>
+                
+                <div>Hello there! Welcome to my portfolio.
+                I am a student and a passionate learner.
+                I have done some projects previously
+                 as an intern, which was basically on web development.
+                My Internship project was basically HTMLand CSS based, 
+                and we had to develop a landing page.<br>
+                <tr><td>You can see my project.<br><a href="https://github.com/shruti08042003/Landing_Page" target="_blank">Here</a></td></tr></div> 
+                </div>
+                    <span id="elements"></span>  
+                </div> 
+                 <div class="rightSection2">
+                     <div class="picture"></div>
+                    <img src="pr1.PNG" alt="developer pic"></div> 
+            </div> 
+        </section> 
+        </main>  
+        <!-- end of project second section --> 
+        <main>
+            <table id="contact"></table>
+            <section class="contact-section">
+                <div class="contact-form">
+                    <table id="ContactMe">
+                    <tr><td><h1 class="project-heading3">Contact Me</h1></td></tr>
+                    <form>
+                        <tr><td><label for="name">Name:</label></td></tr>
+                        <tr><td><input type="text" id="name" name="name"></td></tr>
+                        <tr><td><label for="email">Email:</label></td></tr>
+                        <tr><td><input type="email" id="email" name="email"></td></tr>
+                        <tr><td><label for="message">Message:</label></td></tr>
+                        <tr><td><textarea id="message" name="message" rows="4"></textarea></td></tr>
+                        <tr><td><button type="submit">Submit</button></td></tr>
+                    </form>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <!-- end of contact section -->
+<!-- Your existing HTML code -->
+
+<script>
+    window.onbeforeprint = function () {
+        // Hide the navigation bar when printing
+        document.querySelector('nav').style.display = 'none';
+    };
+
+    window.onafterprint = function () {
+        // Restore the navigation bar after printing
+        document.querySelector('nav').style.display = 'flex';
+    };
+</script>
+</body>
+</html>
+
+</body>
+
+</html>
